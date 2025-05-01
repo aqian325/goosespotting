@@ -35,3 +35,11 @@ function prevCard() {
 
 
 window.onload = () => showCard(currentIndex);
+
+// Toggle info panel open/close on same button
+const infoButton = document.getElementById("infoToggle");
+const infoPanel = document.getElementById("infoPanel");
+
+infoButton.addEventListener("click", () => {
+  infoPanel.classList.toggle("open");
+});

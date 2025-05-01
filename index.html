@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Goose Spotting Flip Cards</title>
   <link rel="stylesheet" href="style.css" />
-</head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></head>
 <body>
   <div class="card-container">
     <div class="flip-card" onclick="flipCard()">
@@ -23,8 +27,44 @@
       <button onclick="prevCard()">← back</button>
       <button onclick="nextCard()">next →</button>
     </div>
+
+
+  </div>
+  <!-- Info Panel Toggle Button -->
+  <button id="infoToggle" class="info-button" title="click to read more about the project">i</button>
+  <!-- <p class="info-instruction">click to read more about the project</p> -->
+
+  <!-- Side Info Panel -->
+  <div id="infoPanel" class="info-panel">
+    <div class="info-panel-content">
+      <h2>About this project</h2>
+      <p>
+        This deck is part of April Qian’s MFA thesis in information design — an exploratory fieldwork tool for noticing traces of the more-than-human urban world.
+
+        It invites you to slow down, notice, and reflect through close observation of the traces that geese leave behind.
+        
+        Through observation, mapping, creative response, and sensory attunement, you’ll explore how civic systems, community life, and material presences shape — and are shaped by — our nonhuman neighbors.
+        
+        <br><br>Draw cards in any order, following your curiosity. Tap to flip. Respond by writing, drawing, photographing, or simply noticing. Take care to observe a respectful distance from the geese.
+        
+        <br><br>These cards are for solo wandering, or for sharing quietly with a friend.
+        
+        <br><br>Take your time.
+        Notice differently.
+
+        <div class="message-link">
+          <a href="https://www.yourworldoftext.com/~daydreamer98/goosespotting" target="_blank" class="button-link">
+            Share your Goose Spotting quests! ->
+          </a>
+        </div>
+        
+      </p>
+    </div>
   </div>
 
   <script src="script.js"></script>
+
+
+
 </body>
 </html>
