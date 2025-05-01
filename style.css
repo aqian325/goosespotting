@@ -1,35 +1,77 @@
-body {
+
+
+html, body {
   margin: 0;
+  padding: 0;
   font-family: sans-serif;
   background-color: #fefcf6;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   flex-direction: column;
 }
 
 .card-container {
-  width: 100%;
-  max-width: 420px;
-  padding: 1rem;
-  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;       /* center the card vertically */
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 1rem 1rem 1rem;      /* bottom padding for buttons */
 }
 
-.card-container img {
+.flip-card {
   width: 100%;
-  height: auto;
-  border-radius: 20px; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 90vw;
+  aspect-ratio: 11 / 17; /* based on your card size: 8.5x5.5 inches */
+  perspective: 1000px;
+  margin-bottom: 1rem;
 }
 
 
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front img,
+.flip-card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
 
 .controls {
-  margin-top: 1rem;
+  margin-top: 1rem;              /* spacing under the card */
+  width: 100%;
+  max-width: 400px;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
+
+
 
 button {
   background: none;

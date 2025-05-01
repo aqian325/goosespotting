@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Goose Spotting Cards</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Goose Spotting Flip Cards</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="card-container">
-    <img id="cardImage" src="cards/cards1.jpg" alt="Card image">
+    <div class="flip-card" onclick="flipCard()">
+      <div class="flip-card-inner" id="flipCardInner">
+        <div class="flip-card-front">
+          <img id="frontImage" src="cards/card1.jpg" alt="Front" />
+        </div>
+        <div class="flip-card-back">
+          <img id="backImage" src="cards/card2.jpg" alt="Back" />
+        </div>
+      </div>
+    </div>
+
     <div class="controls">
       <button onclick="prevCard()">← back</button>
       <button onclick="nextCard()">next →</button>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
