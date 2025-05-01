@@ -41,11 +41,11 @@ html, body {
 
 
 .flipped {
-  transform: rotateY(-180deg);
+  transform: rotateY(-180deg) !important;
 }
 
 .flip-card-back {
-  transform: rotateY(-180deg);
+  transform: rotateY(-180deg) !important;
 }
 
 
