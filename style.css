@@ -86,8 +86,8 @@ button {
   cursor: pointer;
   font-family: 'Hanken Grotesk', sans-serif;
   padding: 0.75rem 1.25rem; /* enlarges tap area */
-  min-width: 48px;
-  min-height: 48px;
+  min-width: 48px !important;
+  min-height: 48px !important;
 }
 
 
@@ -112,8 +112,8 @@ button {
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 42px;
-  height: 42px;
+  width: 42px !important;
+  height: 42px !important;
   background-color: #5F7336;
   color: white;
   border: none;
