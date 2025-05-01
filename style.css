@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fefcf6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #555;
+  cursor: pointer;
+}
