@@ -68,7 +68,7 @@ html, body {
 
 
 .controls {
-  margin-top: 1rem;              /* spacing under the card */
+  margin-top: 0.65rem;              /* spacing under the card */
   width: 100%;
   max-width: 400px;
   display: flex;
@@ -85,8 +85,11 @@ button {
   color: #555;
   cursor: pointer;
   font-family: 'Hanken Grotesk', sans-serif;
-
+  padding: 0.75rem 1.25rem; /* enlarges tap area */
+  min-width: 48px;
+  min-height: 48px;
 }
+
 
 .button-link {
   display: inline-block;
@@ -109,13 +112,13 @@ button {
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   background-color: #5F7336;
   color: white;
   border: none;
   border-radius: 50%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   z-index: 1000;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
