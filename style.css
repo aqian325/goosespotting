@@ -23,7 +23,7 @@ html, body {
 .flip-card {
   width: 100%;
   max-width: 90vw;
-  aspect-ratio: 11 / 17; /* based on your card size: 8.5x5.5 inches */
+  aspect-ratio: 11 / 17; /* based on card size: 5.5x8.5 inches */
   perspective: 1000px;
   margin-bottom: 1rem;
 }
